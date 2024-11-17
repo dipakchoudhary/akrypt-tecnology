@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    #box1{
+        width: 100%;
+        height: 70px;
+        /* border: solid black; */
+        display: flex;
+        background-color: rgb(42, 42, 243);
+        
+    }
+    #box2{
+        width: 200px;
+        height: 70px;
+        /* border: solid; */
+        margin-left: 40px;
+        color: white;
+    }
+    #navigation{
+        display: flex;
+        gap: 60px;
+        margin-left: 200px;
+        margin-top: 10px;
+        color: white;
+    }
+    #baground{
+        width: 100%;
+        height: 500px;
+        border: solid;
+        background-image: url(https://wallpapers.com/images/hd/blue-color-background-1920-x-1200-p1724h2lvpqt5a7d.jpg);
+    }
+   #dd{
+    margin-top: 90px;
+    position: relative;
+    /* left: 70px; */
+    color: white;
+   }
+   #img{
+    width: 400px;
+    height: 400px;
+    /* border: solid; */
+    margin-left: 900px;
+    position: relative;
+   bottom: 340px;
+    
+   }
+   #container{
+    width: 100%;
+    height: 900px;
+    border: solid;
+   }
+   #al{
+    width: 300px;
+    height: 400px;
+    /* border: solid; */
+    position: relative;
+    top: 250px;
+    margin-left: 150px;
+    
+   }
+   #oo{
+    width: 300px;
+    height: 300px;
+    border: solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+    bottom: 500px;
+    left: 600px;
+   }
+   #gg{
+    width: 300px;
+    height: 300px;
+    border: solid white;
+    position: relative;
+    bottom: 850px;
+    left: 950px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+   }
+   #pp{
+    width: 300px;
+    height: 300px;
+    border: solid white;
+    position: relative;
+    bottom: 750px;
+    left: 950px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+   }
+  #qq{
+    width: 300px;
+    height: 300px;
+    border: solid rgb(252, 247, 247);
+    position: relative;
+    bottom: 990px;
+    left: 600px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+  }
+  #po{
+    width: 100px;
+    height: 50px;
+    border: solid white;
+    position: relative;
+    top: 50px;
+    margin-left: 30px;
+  }
+  #xx{
+    font-size: 18px;
+  }
+  #www{
+    width: 100%;
+    height: 400px;
+    /* border: solid; */
+    display: flex;
+    gap: 40px;
+  }
+  #mam{
+    width: 300px;
+    height: 350px;
+    /* border: solid; */
+    margin-top: 20px;
+    position: relative;
+    left: 60px;
+    
+  }
+  #rj{
+    width: 300px;
+    height: 70px;
+    /* border: solid; */
+    border: solid white;
+    margin-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+  }
+  #ai{
+    width: 100%;
+    height: 300px;
+    /* border: solid; */
+  }
+  #uk{
+    width: 99%;
+    height: 200px;
+    /* border: solid; */
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    background-color: rgb(179, 245, 248);
+  }
+  #bur{
+    width: 250px;
+    height: 150px;
+    /* border: solid; */
+    margin-top: 30px;
+    position: relative;
+    margin-left: 70px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #lp{
+    width: 100%;
+    height: 600px;
+    border: solid;
+    display: flex;
+    gap: 200px;
+  }
+  #iu{
+    width: 400px;
+    height: 500px;
+    /* border: solid; */
+    margin-top: 40px;
+  }
+  #ip{
+    margin-top:100px;
+    margin-right: 200px;
+    font-size: 25px;
+  }
+  #nk{
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgb(5, 5, 239);
+  }
+  #pi{
+    width: 100%;
+    height: 300px;
+    /* border: solid; */
+    display: flex;
+  }
+  #uuu{
+    width: 300px;
+    height: 300px;
+    /* border: solid; */
+    margin-left: 50px;
+  }
+  #ind{
+    width: 100%;
+    height: 400px;
+    border: solid;
+    background-image: url(https://plus.unsplash.com/premium_photo-1682310075673-b408eb1ca6fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJhZGluZ3xlbnwwfHwwfHx8MA%3D%3D);
+  }
+  #pak{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+  #pk{
+    width: 100%;
+    height: 300px;
+    border: solid;
+    display: flex;
+  }
+  #qr{
+    width: 300px;
+    height: 300px;
+    border: solid;
+  }
+    
+</style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <p style="text-align: center;font-size: 25px;text-align: center;">Bootslander</p>
+
+        </div>
+        <div id="navigation">
+            <p>HOME</p>
+            <P>ABOUT</P>
+            <P>FUTIORS</P>
+            <P>GALLERY</P>
+            <P>TEAM</P>
+            <P>PRICING</P>
+            <P>DROPDOUN</P>
+            <P>CONTACT</P>
+
+        </div>
+        
+
+    </div>
+    <div id="baground">
+        <div id="dd">
+            <h1 style="font-size: 40px;margin-left: 100px;">Build Your Landing Page</h1>
+            <h1 style="font-size: 40px;margin-left: 100px;">With Bootslander</h1>
+            <p style="font-size: 25px;margin-left: 100px;">We are team of talented designers making websites with <br> Bootstrap</p>
+            <button style="width: 150px;height: 50px;border-radius: 20px;background-color: aqua;font-size: 20px;margin-left: 100px;">get started</button> 
+            
+           
+        </div>
+        <div id="img">
+            <img style="width: 400px;height: 400px;" src="https://themewagon.github.io/Bootslander/assets/img/hero-img.png" alt="">
+            
+
+        </div>
+
+    </div>
+    <div id="container">
+        <div id="al">
+            <div id="ll">
+                <button style="width: 90px;height: 40px;border-radius: 20px;background-color: rgb(172, 238, 240);">about us</button>
+                <h1>Ducimus rerum libero reprehenderit cumque</h1>
+                <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
+                <button style="width: 100PX;height: 50px;border-radius: 10px;background-color: rgb(175, 246, 249);">REED MORE</button>
+            </div>
+            <div id="oo">
+                <div id="po">
+                    <img style="width: 100px;height: 50px;border-radius: 400px;;" src="https://www.shutterstock.com/shutterstock/photos/1959869302/display_1500/stock-vector-gold-and-silver-circle-star-logo-template-1959869302.jpg" alt="">
+                  <div id="xx">
+                    <p>Eius provident</p>
+                    <p>the name is the loiremand the men nane is and nenfis  is t eh test</p>
+
+                  </div>
+                    
+                    
+
+
+                </div>
+            
+
+            </div>
+            <div id="gg">
+                <div id="po">
+                    <img style="width: 100px;height: 50px;border-radius: 400px;;" src="https://www.shutterstock.com/shutterstock/photos/1959869302/display_1500/stock-vector-gold-and-silver-circle-star-logo-template-1959869302.jpg" alt="">
+                  <div id="xx">
+                    <p>Eius provident</p>
+                    <p>the name is the loiremand the men nane is and nenfis  is t eh testhd</p>
+
+                  </div>
+                    
+                    
+
+
+                </div>
+
+            </div>
+            <div id="pp">
+                <div id="po">
+                    <img style="width: 100px;height: 50px;border-radius: 400px;;" src="https://www.shutterstock.com/shutterstock/photos/1959869302/display_1500/stock-vector-gold-and-silver-circle-star-logo-template-1959869302.jpg" alt="">
+                  <div id="xx">
+                    <p>Eius provident</p>
+                    <p>the name is the loiremand the men nane is and nenfis  is t eh testh</p>
+
+                  </div>
+                    
+                    
+
+
+                </div>
+
+            </div>
+            <div id="qq">
+                <div id="po">
+                    <img style="width: 100px;height: 50px;border-radius: 400px;;" src="https://www.shutterstock.com/shutterstock/photos/1959869302/display_1500/stock-vector-gold-and-silver-circle-star-logo-template-1959869302.jpg" alt="">
+                  <div id="xx">
+                    <p>Eius provident</p>
+                    <p>the name is the loiremand the men nane is and nenfis  is t eh testhd</p>
+
+                  </div>
+                    
+                    
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+    <div id="www">
+        <div id="mam">
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem ipson</p>
+
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">nemo inim</p>
+
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">dirda pack</p>
+
+
+            </div>
+
+        </div>
+        <div id="mam">
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem google</p>
+
+                
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem netlify</p>
+
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem hosting</p>
+
+
+            </div>
+
+
+        </div>
+        <div id="mam">
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem ipson</p>
+
+                
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem ipson</p>
+
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem performance</p>
+
+
+            </div>
+
+
+        </div>
+        <div id="mam">
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem ipson</p>
+
+                
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem ipson</p>
+
+
+            </div>
+            <div id="rj">
+                <i style="margin-top: 20px;" class="fa-solid fa-face-smile"></i>
+                <p style="margin-bottom: 20px;position: relative;bottom: 55px;left: 100px;font-size: 30px;">lorem whattsap</p>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="ai">
+        <div id="uk">
+            <div id="bur">
+                <p>232</p>
+                <p>happy clint</p>
+                
+
+            </div>
+            <div id="bur">
+                <p>521</p>
+                <p>projects</p>
+                
+
+            </div>
+            <div id="bur">
+                <p>1463</p>
+                <p>hover suuport</p>
+                
+
+            </div>
+            <div id="bur">
+                <p>15</p>
+                <p>hard workars</p>
+                
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <div id="lp">
+        <div id="iu">
+            <img style="width: 400px;height: 500px;" src="https://themewagon.github.io/Bootslander/assets/img/details-1.png" alt="">
+
+        </div>
+        <div id="ip">
+            <p>Voluptatem dignissimos provident quasi corporis</p>
+            <p>voluptates sit assumenda.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li>Ullam est qui quos consequatur eos accusamus.</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="nk">
+        <p>gallary------</p>
+        <p>chek our galary</p>
+
+    </div>
+    <br>
+    <div id="pi">
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-1.jpg" alt="">
+
+        </div>
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-2.jpg" alt="">
+
+        </div>
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-3.jpg" alt="">
+            
+
+        </div>
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-4.jpg" alt="">
+
+        </div>
+    
+
+    </div>
+    <br>
+    <div id="pi">
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-5.jpg" alt="">
+
+        </div>
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-6.jpg" alt="">
+
+        </div>
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-7.jpg" alt="">
+
+        </div>
+        <div id="uuu">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/gallery/gallery-8.jpg" alt="">
+
+        </div>
+    
+
+    </div>
+    <br>
+    <div id="ind">
+        <div id="pak">
+            <h1>johan lerson</h1>
+            <p>mapping in the program</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis vitae deleniti omnis facere?!</p>
+
+        </div>
+
+    </div>
+    <h1>TEAM----------</h1>
+    <H1>CHEK OUR TEAM</H1>
+    <div id="pk">
+        <div id="qr">
+
+        </div>
+        <div id="qr">
+
+        </div>
+        <div id="qr">
+
+        </div>
+
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>

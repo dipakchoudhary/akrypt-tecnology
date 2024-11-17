@@ -6,21 +6,32 @@
     <title>Document</title>
     <style>
         .nav{
-            width: 100%;
+            /* width: 100%; */
             height: 50px;
-            border: solid;
+            /* border: solid; */
             display: flex;
+            /* position: fixed; */
 
         }
+        
+            
+        @media screen and  ( max-width:480px)  { 
+            .logo{
+                display: none;
+                color: orangered;
+            }
+        }
+
         .logo{
-            width: 150px;
+            /* width: 150px; */
             height: 50px;
-            border: solid;
+            /* border: solid; */
+
         }
         #nav2{
-            width: 700px;
+            /* width: 700px; */
             height: 50px;
-            border: solid black;
+            /* border: solid black; */
             margin-left: 200px;
         }
         .navigation{
@@ -29,10 +40,14 @@
             margin-left: 900px;
         }
         #image{
-            width: 100%;
+            /* width: 100%; */
             height: 650px;
             border: solid;
             background-image: url(https://c0.wallpaperflare.com/preview/18/442/539/apple-device-computer-dark-electronics-thumbnail.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
         }
         #tag{
             width: 200px;
@@ -42,20 +57,20 @@
             background-color: rgb(91, 144, 146);
         }
         #box3{
-            width: 100%;
+            /* width: 100%; */
             height: 200px;
-            border: solid black;
+            /* border: solid black; */
         }
         #box8{
-            width: 100%;
+            /* width: 100%; */
             height: 400px;
-            border: solid;
+            /* border: solid; */
             display: flex;
         }
         #box9{
-            width: 300px;
+            /* width: 300px; */
             height: 400px;
-            border: solid;
+            /* border: solid; */
             margin-left: 80PX;
         }
         #box11{
@@ -65,71 +80,213 @@
             margin-left: 150px;
         }
         .box12{
-            border: solid black;
+            /* border: solid black; */
+            background-color: cadetblue;
         }
         .box13{
-            border: solid black;
+            /* border: solid black; */
+            background-color: cadetblue;
         }
         #bt{
-            width: 250px;
+            /* width: 250px; */
             height: 40px;
             border: solid;
             background-color:black ;
             margin-left: 30px;
         }
         #box15{
-            width: 100%;
+            /* width: 100%; */
             height: 100px;
-            border: solid;
+            /* border: solid; */
         }
         #box16{
-            width: 100%;
+            /* width: 100%; */
             height: 500px;
-            border: solid;
+            /* border: solid; */
             display: flex;
         }
         #box17{
-            width: 290px;
+            /* width: 290px; */
             height: 450px;
-            border: solid;
-            margin-left: 70px;
+            /* border: solid; */
+            /* margin-left: 70px; */
+            border: solid white;
         }
         #box0{
-            width: 290px;
+            /* width: 290px; */
             height: 50px;
             border: solid;
+            background-color: cadetblue;
         }
         #mm{
-            width: 100%;
+            /* width: 100%; */
             height: 200px;
-            border: solid;
-            background-color: rgb(173, 204, 205);
+            /* border: solid; */
+            background-color: rgb(140, 149, 149);
             display: flex;
             gap: 250px;
         }
         #gg{
-            width:100px ;
+            /* width:100%; */
             height: 100px;
             border:100px ;
-            border: solid;
-            margin-left: 70px;
+            /* border: solid; */
+            margin-left: 100px;
             margin-top: 35px;
             text-align: center;
+            
         }
         #box30{
-            width: 100%;
+            /* width: 100%; */
             height: 300px;
-            border: solid;
+            /* border: solid; */
             display: flex;
+            gap: 30px;
+            margin-left: 80px;
         }
         #box31{
-            width: 400px;
+            /* width: 300px; */
             height: 300px;
-            border: solid;
+            /* border: solid; */
             display: flex;
             gap: 100px;
         }
+        #container{
+            /* width: 100%; */
+            height: 200px;
+            /* border: solid; */
+        }
+        #box35{
+            display: grid;
+            grid-template-columns: 700px 700px;
+            grid-template-rows: 400px 400px;
+            gap: 20px;
+        }
+        #box36{
+            /* border: solid black; */
+            background-color: rgb(174, 232, 234);
+        }
+        #box37{
+            /* border: solid black; */
+            /* margin-left: 20px; */
+            background-color: rgb(169, 169, 127);
+            
+        }
+        #oo{
+            width: 500px;
+            height: 40px;
+            /* border: solid; */
+            display: flex;
+            margin-left: 20px;
+        }
+        #box40{
+            width: 1500px;
+            height: 800px;
+            /* border: solid; */
+            background-color: rgb(113, 163, 164);
+            
+        }
+        #box41{
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 600px ;
+            margin-left: 150px;
+            gap: 30px;
+        }
+        #ll{
+            border: solid black;
+        }
+        #aa{
+            border: solid black;
+        }
+        #cc{
+            border: solid black;
+        }
+        #qq{
+            width: 392px;
+            height: 100px;
+            border: solid;
+            background-color: black;
+        }
+        #er{
+            width: 150px;
+            height: 40px;
+            /* border: solid; */
+           margin-left: 120px;
+           background-color: black;
+        }
+        #aa{
+            /* border: solid; */
+            width: 400px;
+            height: 100px;
+            background-color: red;
+        }
+        #ade{
+            width:150px ;
+            height: 44px;
+            /* border: solid; */
+            background-color: black;
+            margin-left: 130px;
+        }
+        #uuu{
+            width: auto px;
+            height:98px;
+            border: solid;
+            background-color: black;
+        }
+        #jjjjj{
+            width: 100%;
+            height: 750px;
+            /* border: solid black; */
+            background-color: rgb(222, 239, 239);
+
+        }
+       #ak{
+        width: 100%;
+        height: 50px;
+        /* border: solid; */
+        margin-left: 20px;
+        background-color: white;
         
+       }
+       #name{
+        width: 200px;
+        height: 50px;
+        border: solid;
+        margin-top: 40px;
+        margin-left: 20px;
+        background-color: black;
+       }
+       #map{
+        /* width: 100%; */
+        height: 600px;
+        /* border: solid; */
+        background-image: url(https://www.w3schools.com/w3images/map.jpg);
+       }
+       #footer{
+        width: 100%;
+        height: 300px;
+        background-color: black;
+       }
+       #xyz{
+        width: 300px;
+        height: 50px;
+        border: solid white;
+        margin-left: 700px;
+        background-color: white;
+        
+      
+       
+        
+       }
+       /* HOVER ALL PAGE TO CSS */
+       .logo:hover{
+        background-color: red;
+       }
+       .navigation:hover{
+        color: chocolate;
+       }
+       
     </style>
 </head>
 <body>
@@ -155,8 +312,8 @@
 
     </div>
     <div id="image">
-        <p style="color: white; margin-top: 150px; font-size: 50px;margin-left: 50px;">Start something that matters</p>
-        <p style="color: white; margin-left: 50px;">Stop wasting valuable time with projects that just isn't you.
+        <p style="color: white; margin-top: 150px; font-size: 50px;margin-left: 50px;color: orange;">Start something that matters</p>
+        <p style="color: white; margin-left: 50px;color: cornflowerblue;">Stop wasting valuable time with projects that just isn't you.
  </p>
        <div id="tag">
         <p style="color:black;">learn more and restrart today</p>
@@ -171,8 +328,8 @@
         <br>
         <br><br><br>
         <br>
-        <p style="text-align: center;font-size: 20px;">ABOUT THE COMPANY</p>
-        <p style="text-align: center;">Key features of our company</p>
+        <p style="text-align: center;font-size: 20px;color: coral;">ABOUT THE COMPANY</p>
+        <p style="text-align: center;color: coral;">Key features of our company</p>
         <div id="box6">
 
         </div>
@@ -180,28 +337,28 @@
     </div>
     <div id="box8">
         <div id="box9">
-            <img style="height: 200PX;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8jISL+/v6CgYIfHB4lIyQ9OzzCwcL6+voNCQujoqMhHyD39/ccGhvl5eVsa2sSEBDW1dZOTE1ZV1gAAAAuLC0WExWbmpu3trff3t6pqanz8vJGRUZnZmZ5eHhxcHGKiYrKysq8vLxeXV02NDVU4sJVAAADh0lEQVR4nO3dfVeiQBSAcUBGQRgTFXyBUrPv/xkXKmvPhrdkprq1z2/3bKetS/MoKvkHBAEAAAAAAAAAAAAAAAAAAAC8iX4Cpz5vN9VnGr7MdrBYj7RbF48rHRZYn0wYe2XTVWr9bjI0p3pYYhQUZRUar7JmkkyazO9Gw6oshiRGwWxpTeiVMdN2u1Pje7N2ORt0L679rqNbSrkJkmBTei5srQfdhbf2dWndzvC8T5hLn7z39XYz4V0d1Hfhy4Twzc//htLXX9Znb6+/E6Pg2GTnPm83dVzere/K2Nv2zivLmuOAwsn4vJ1qNfclXa1WqbetrarzEscTl8LVvpjpVOxXPgqr3ZWjX2lXORcae1N/93GnoL59ekVzuQ/Tda736DTK16nzXppOE8WFyZTCy7MUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqz/02hqUa14sJ6VLmekc5k4+OnLM6P4zhzPudeaJeTT1mcD5Pl8zlW3c59aR9ONzqdHs4nkR1YeD5Da2i1Oi8wG1RYLF82MOwczV/g5S5YDjkbdD56PY+wdnaUX933uJvG/k/a/BlMPL7+NMKdZGrfObd4KHz2hd+c2WkyoK+V76p5nGkXz6vdgH30SbQ9NGFs4+9+yryoXVvYHLbDD7qi7sgv1607anY5rPwBV7i4aon6cz5G6Mi3hYvtwKe0fySOq7j8vJMcD6eFi42nwp3TKk6H44V15LumsnHW/Xn+2/8h6/nPbsg2gy6k8UZ7wNjYtz/gYx/ahdiq6X/5iDZl7HQEGpYbD32dTem2kLjc9N3UW+dLkmTlYunDosze/2HiYZxdbnt2jfvUbbMdTy/k7gtJ7988YLoz1LsfZ7vsW3/vZs7r6LkaQJQf5j/jN4mPMPPD28Jk52EvVSPd9bwHenR9fOthsrLvDcJ65OGBqINJR3Xfq1CxSPW+I3ONMF0UfYFBMNubzO810b5FZvaz/sD2oXnUf6m89wkX0/stvzxJJd996R9PvvC2BAAAAAAAAAAAAAAAAAAA+G3+ANglti5VUF64AAAAAElFTkSuQmCC" alt="">
-            <p style="text-align: center;">RESPONSIVE</p>
-            <P style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
+            <img  style="height: 200PX;margin-left: 45px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8jISL+/v6CgYIfHB4lIyQ9OzzCwcL6+voNCQujoqMhHyD39/ccGhvl5eVsa2sSEBDW1dZOTE1ZV1gAAAAuLC0WExWbmpu3trff3t6pqanz8vJGRUZnZmZ5eHhxcHGKiYrKysq8vLxeXV02NDVU4sJVAAADh0lEQVR4nO3dfVeiQBSAcUBGQRgTFXyBUrPv/xkXKmvPhrdkprq1z2/3bKetS/MoKvkHBAEAAAAAAAAAAAAAAAAAAAC8iX4Cpz5vN9VnGr7MdrBYj7RbF48rHRZYn0wYe2XTVWr9bjI0p3pYYhQUZRUar7JmkkyazO9Gw6oshiRGwWxpTeiVMdN2u1Pje7N2ORt0L679rqNbSrkJkmBTei5srQfdhbf2dWndzvC8T5hLn7z39XYz4V0d1Hfhy4Twzc//htLXX9Znb6+/E6Pg2GTnPm83dVzere/K2Nv2zivLmuOAwsn4vJ1qNfclXa1WqbetrarzEscTl8LVvpjpVOxXPgqr3ZWjX2lXORcae1N/93GnoL59ekVzuQ/Tda736DTK16nzXppOE8WFyZTCy7MUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqzFKpAoThLoQoUirMUqkChOEuhChSKsxSqQKE4S6EKFIqz/02hqUa14sJ6VLmekc5k4+OnLM6P4zhzPudeaJeTT1mcD5Pl8zlW3c59aR9ONzqdHs4nkR1YeD5Da2i1Oi8wG1RYLF82MOwczV/g5S5YDjkbdD56PY+wdnaUX933uJvG/k/a/BlMPL7+NMKdZGrfObd4KHz2hd+c2WkyoK+V76p5nGkXz6vdgH30SbQ9NGFs4+9+yryoXVvYHLbDD7qi7sgv1607anY5rPwBV7i4aon6cz5G6Mi3hYvtwKe0fySOq7j8vJMcD6eFi42nwp3TKk6H44V15LumsnHW/Xn+2/8h6/nPbsg2gy6k8UZ7wNjYtz/gYx/ahdiq6X/5iDZl7HQEGpYbD32dTem2kLjc9N3UW+dLkmTlYunDosze/2HiYZxdbnt2jfvUbbMdTy/k7gtJ7988YLoz1LsfZ7vsW3/vZs7r6LkaQJQf5j/jN4mPMPPD28Jk52EvVSPd9bwHenR9fOthsrLvDcJ65OGBqINJR3Xfq1CxSPW+I3ONMF0UfYFBMNubzO810b5FZvaz/sD2oXnUf6m89wkX0/stvzxJJd996R9PvvC2BAAAAAAAAAAAAAAAAAAA+G3+ANglti5VUF64AAAAAElFTkSuQmCC" alt="">
+            <p style="text-align: center;color:navy;">RESPONSIVE</p>
+            <P style="text-align: center; color: orange;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
 
         </div>
         <div id="box9">
-            <img style="height: 200px;" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeWuSbit_gIF5E7xFLn0xzU6NLHaBNb_bBZfo3QrAYDS-fIVWd" alt="">
-            <p style="text-align: center;">PASSION</p>
-            <P style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
+            <img style="height: 200px;margin-left: 45px" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeWuSbit_gIF5E7xFLn0xzU6NLHaBNb_bBZfo3QrAYDS-fIVWd" alt="">
+            <p style="text-align: center;color: navy;">PASSION</p>
+            <P style="text-align: center;color: orange;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
 
         </div>
         <div id="box9">
-            <img style="height: 200px;" src="data:image/png;base64,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" alt="">
-            <p style="text-align: center;">DESIGN</p>
-            <P style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
+            <img style="height: 200px;margin-left: 45px" src="data:image/png;base64,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" alt="">
+            <p style="text-align: center;color: navy;">DESIGN</p>
+            <P style="text-align: center;color: orange;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
 
 
         </div>
         <div id="box9">
-            <img style="height: 200px;" src="data:image/png;base64,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" alt="">
-            <p style="text-align: center;">SUUPORT</p>
-            <P style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
+            <img style="height: 200px;margin-left: 45px" src="data:image/png;base64,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" alt="">
+            <p style="text-align: center;color: navy;">SUUPORT</p>
+            <P style="text-align: center;color: orange;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</P>
 
         </div>
         
@@ -211,10 +368,16 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div id="box11">
         <div class="box12">
-            <p style="font-size: 30px;margin-left: 30px;">We know design</p>
-            <p style="margin-left: 30px;">pisicing elit. Natus optio dolorum iias nulla sit eveniet <br> deserunt! Itaque ea veritatis assumenda provident debitis  <br>eligendi doloribus, voluptates perferendis vero quis quam.</p>
+            <p style="font-size: 30px;margin-left: 30px;color: orange;">We know design</p>
+            <p style="margin-left: 30px;color: cyan;">pisicing elit. Natus optio dolorum iias nulla sit eveniet <br> deserunt! Itaque ea veritatis assumenda provident debitis  <br>eligendi doloribus, voluptates perferendis vero quis quam.</p>
             <div id="bt">
                 <p style="color: aliceblue;text-align: center;">VIEW OUR WOEKS</p>
 
@@ -231,8 +394,8 @@
 
     </div>
     <div id="box15">
-        <p  style="text-align: center;font-size: 20px;">THE TEAM</p>
-        <p style="text-align: center;">The ones who runs this company</p>
+        <p  style="text-align: center;font-size: 20px;font-size: 30px;color: cadetblue;">THE TEAM</p>
+        <p style="text-align: center;font-size: 25px;color: cadetblue;">The ones who runs this company</p>
 
     </div>
     <br>
@@ -240,11 +403,11 @@
     <div id="box16">
         <div id="box17">
             <img style="width: 290px;" src="https://www.w3schools.com/w3images/team2.jpg" alt="">
-            <p style="font-size: 30px;">John Doe</p>
-            <p>CEO & Founder</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p style="font-size: 30px;color: orange;">John Doe</p>
+            <p style="color: cadetblue;">CEO & Founder</p>
+            <p style="color: rgb(54, 147, 150);">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
             <div id="box0">
-                <p style="text-align: center;">CONTACT</p>
+                <p style="text-align: center; ">CONTACT</p>
 
             </div>
             
@@ -252,9 +415,9 @@
         </div>
         <div id="box17">
             <div id="box17">
-                <img style="width: 290px;" src="https://www.w3schools.com/w3images/team2.jpg" alt="">
-                <p style="font-size: 30px;">John Doe</p>
-                <p>CEO & Founder</p>
+                <img style="width: 290px;" src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+                <p style="font-size: 30px;color: orange;">Anja Doe</p>
+                <p style="color: brown;">Art Director</p>
                 <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                 <div id="box0">
                     <p style="text-align: center;">CONTACT</p>
@@ -270,9 +433,9 @@
         </div>
         <div id="box17">
             <div id="box17">
-                <img style="width: 290px;" src="https://www.w3schools.com/w3images/team2.jpg" alt="">
-                <p style="font-size: 30px;">John Doe</p>
-                <p>CEO & Founder</p>
+                <img style="width: 290px;" src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+                <p style="font-size: 30px; color: orange;">Mike Ross</p>
+                <p style="color: chocolate;">WEB DESIGNER</p>
                 <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                 <div id="box0">
                     <p style="text-align: center;">CONTACT</p>
@@ -286,10 +449,10 @@
         </div>
         <div id="box17">
             <div id="box17">
-                <img style="width: 290px;" src="https://www.w3schools.com/w3images/team2.jpg" alt="">
-                <p style="font-size: 30px;">John Doe</p>
-                <p>CEO & Founder</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <img style="width: 290px;" src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+                <p style="font-size: 30px;color: orange;">DEN STAR</p>
+                <p style="color: coral;" >DISIGNER</p>
+                <p style="color: rgb(86, 138, 139);">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                 <div id="box0">
                     <p style="text-align: center;">CONTACT</p>
     
@@ -309,52 +472,271 @@
 
     </div>
     <div id="mm">
-        <div id="gg">
-            <strong>14+</strong>
-            <p>partners</p>
+        <div  id="gg">
+            <strong style="font-size: 30PX;color: white;">14+</strong>
+            <p style="color: white;">partners</p>
 
         </div>
         <div id="gg">
-            <strong>14+</strong>
-            <p>partners</p>
+            <strong style="font-size: 30PX;color: white;">55+</strong>
+            <p style="color: white;">project done</p>
 
         </div>
         <div id="gg">
-            <strong>14+</strong>
-            <p>partners</p>
+            <strong style="font-size: 30px;color: white;" >89+</strong>
+            <p style="color: aliceblue;">happy clint</p>
 
         </div>
         <div id="gg">
-            <strong>14+</strong>
-            <p>partners</p>
+            <strong style="font-size: 30px;color: white;">150+</strong>
+            <p style="color: white;">meting</p>
 
         </div>
-        br
-
-        
+       
     </div>
     <br>
+    <br>
+    <div id="container">
+        <p style="margin-left: 0px;margin-top: 60px;text-align: center;font-size: 30px;">OUR WORK</p>
+<p style="margin-top: 0px;text-align: center;font-size: 20px;">What we've done for people</p>
+
+    </div>
+    <div id="box30">
+        <div id="box31">
+            <img width="300px" src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="">
+            
+            
+        </div>
+        <div id="box31">
+            <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="">
+            
+        </div>
+        <div id="box31">
+            <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="">
+            
+        </div>
+        <div id="box31">
+            <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="">
+            
+        </div>
+        
+
+    </div>
     <br>
     <div id="box30">
         <div id="box31">
+            <!-- <img width="300px" src="https://www.w3schools.com/w3images/tech_mic.jpg" alt=""> -->
+             <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="">
             
             
         </div>
         <div id="box31">
+            <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="">
             
         </div>
         <div id="box31">
-            
+            <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="">
         </div>
         <div id="box31">
+            <img style="width: 300px;" src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="">
             
         </div>
         
 
     </div>
+    <br><br>
+   <div id="box35">
+    <div id="box36">
+        <p style="font-size: 25px;margin-top: 60px;margin-left: 20px;">Our Skills.</p>
+        <p style="margin-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quidem iure amet architecto libero, vero inventore. Aperiam optio eveniet maiores vel, a, aliquam aut reiciendis, autem voluptates aliquid modi.</p>
+    </div>
+    <div id="box37">
+        <p>PHOYOGRAFHY</p>
+        <div style="background-color: rgb(180, 205, 206);" id="oo">
+            <p style="margin-left: 250px;">90%</p>
+           
+
+        </div>
+        <div id="box37">
+            <p>PHOYOGRAFHY</p>
+            <div style="background-color: rgb(180, 205, 206);" id="oo">
+                <p style="margin-left: 250px;">90%</p>
+               
+    
+            </div>
+            <div id="box37">
+                <p>PHOYOGRAFHY</p>
+                <div style="background-color: rgb(180, 205, 206);" id="oo">
+                    <p style="margin-left: 250px;">90%</p>
+                   
+        
+                </div>
+                
+        
+    </div>
+    
+
+   </div>
+   
+   </div>
+   <div id="box40">
+    <p style="margin-top: 100px;text-align: center;font-size: 25px;color: white;">PRICING</p>
+    <p style="text-align: center;font-size: 20px;color: white;">Choose a pricing plan that fits your needs.</p>
+    <div id="box41">
+        <div id="ll">
+            <div id="qq">
+                <p style="font-size: 30px;text-align: center;color: white;">basic </p>
+
+            </div>
+            <p style="text-align: center;font-size: 25px;">10GB Storage</p>
+            <hr>
+             <p style="text-align: center;font-size: 25px;">10GB Storage</p>
+            <hr>
+            <p style="text-align: center;font-size: 25px;">10 Domains</p>
+            <hr>
+            <p style="text-align: center;font-size: 25px;">Endless Support</p>
+            <hr>
+            <p style="text-align: center;font-size: 25px;">$ 10 <br>per mont</p>
+            <hr>
+            <div id="er">
+                <p style="color: aliceblue;text-align: center;font-size: 20px;">sign up</p>
+
+            </div>
+         
+        </div>
+        <div id="aa">
+            <p style="text-align: center;font-size: 30px;color: white;">pro</p>
+            <p style="margin-top: 58px; text-align: center;font-size: 16px;">25GB Storage</p>
+            <br>
+            
+            <hr>
+            <p style="margin-top: 45px; text-align: center;font-size: 16px;">25GB Storage</p>
+            
+            
+            <hr>
+            <p style="margin-top: 45px; text-align: center;font-size: 16px;">25GB Storage</p>
+            
+            
+            <hr>
+            <p style="margin-top: 45px; text-align: center;font-size: 16px;">25GB Storage</p>
+            
+            
+            <hr>
+            <p style="margin-top: 55px; text-align: center;font-size: 16px;">$20 <br>per mont</p>
+            <hr>
+            <div id="ade">
+                <p style="color: white;text-align: center;font-size: 20px;">sign up</p>
+
+            </div>
+            
+            
+            <hr>
+            
+
+        </div>
+        <div id="cc">
+            <div id="uuu">
+                <p style="color: white;font-size: 30px;text-align: center;">Premium</p>
+                <p style="margin-top: 58px; text-align: center;font-size: 16px;">25GB Storage</p>
+                <br>
+                
+                <hr>
+                <p style="margin-top: 45px; text-align: center;font-size: px;">25GB Storage</p>
+                
+                
+                <hr>
+                <p style="margin-top: 45px; text-align: center;font-size: 16px;">25GB Storage</p>
+                
+                
+                <hr>
+                <p style="margin-top: 45px; text-align: center;font-size: 16px;">25GB Storage</p>
+                
+                
+                <hr>
+                <p style="margin-top: 55px; text-align: center;font-size: 16px;">$20 <br>per mont</p>
+                <hr>
+                <div id="ade">
+                    <p style="color: white;text-align: center;font-size: 20px;">sign up</p>
+    
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div id="jjjjj">
+        <p style="margin-top: 100px;text-align: center;font-size: 30px;">CONTACT</p>
+        <P style="text-align: center;font-size: 25px;">Lets get in touch. Send us a message:</P>
+        <br>
+
+        <ul>
+            <li>Chicago, US</li>
+            <br>
+            <li>Phone: +00 151515</li>
+            <br>
+            <li> Email: mail@mail.com</li>
+        </ul>
+        <div id="ak">
+            <p style="margin-left: 10px;">NAME:-</p>
+
+        </div>
+        <br>
+        <div id="ak">
+            <P style="margin-left: 10px;">EMAIL:-</P>
+
+        </div>
+        <br>
+        
+        <div id="ak">
+            <P style="margin-left: 10px;">SUBJECT:-</P>
+            
+
+        </div>
+        <br>
+        <div id="ak">
+            <P style="margin-left: 10px;">MASSAGE:-</P>
+
+        </div>
+        <div id="name">
+            <p style="color: white;text-align: center;;">SEND MASSAGE</p>
+
+        </div>
+
+    </div>
+    <br>
+    <div id="map">
+
+    </div>
+    <br>
+    <div id="footer">
+        <br>
+        <br>
+        
+        <div id="xyz">
+            <p style="text-align: center;font-size: 20PX;">TO THE TOP</p>
+
+
+        </div>
+        <BR></BR>
+             <P style="color: white;text-align: center;font-size: 25PX;margin-left: 200PX;">Powered by w3.css</P>
+
+
+    </div>
+    
+
+
+   
+   
+   
+   
+    
     
     
    
     
 </body>
-</html>
+</html>/
