@@ -38,7 +38,7 @@
     margin-top: 90px;
     position: relative;
     /* left: 70px; */
-    color: white;
+    color: rgb(222, 211, 211);
    }
    #img{
     width: 400px;
@@ -213,14 +213,127 @@
   #pk{
     width: 100%;
     height: 300px;
-    border: solid;
+    /* border: solid; */
     display: flex;
   }
   #qr{
     width: 300px;
     height: 300px;
-    border: solid;
+    /* border: solid; */
+    margin-left: 150px;
+    position: relative;
   }
+  #fg{
+    width: 100%;
+    height: 600px;
+    /* border: solid; */
+    display: flex;
+    gap: 200px;
+  }
+  #tq{
+    width: 500px;
+    height: 600px;
+    /* border: solid; */
+   
+  }
+  #marks{
+    margin-top: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  #mens{
+    width: 500px;
+    height: 100px;
+    /* border: solid; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+  }
+  /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color:blue;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-links, .footer-social, .footer-contact {
+    width: 30%;
+    padding: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #f4b400; /* Highlight color */
+}
+
+.footer-social .social-icon {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links, .footer-social, .footer-contact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
     
 </style>
 </head>
@@ -540,16 +653,89 @@
     <H1>CHEK OUR TEAM</H1>
     <div id="pk">
         <div id="qr">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/team/team-1.jpg" alt="">
 
         </div>
         <div id="qr">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/team/team-2.jpg" alt="">
+
 
         </div>
         <div id="qr">
+            <img style="width: 300px;height: 300px;" src="https://themewagon.github.io/Bootslander/assets/img/team/team-3.jpg" alt="">
+
 
         </div>
 
     </div>
+    <br>
+    <div id="fg">
+        <div id="tq">
+            <div id="marks">
+            <p style="font-size: 30px;">Frequently Asked Questions</p>
+            <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+        </div>
+        <div id="mens">
+            <p style="color:palevioletred;">loream and rge bane udjhd kjshd sk d ffhhhhh akkkskkf j  hhhh ahf </p>
+            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor </p>
+        </div>
+        <div id="mens">
+            <p style="margin-top: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex sed hic veniam totam doloribus min</p>
+
+        </div>
+        <div id="mens">
+            <p style="margin-top: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis in culpa quas cumque ducimus unde nam perspiciatis molestiae</p>
+
+        </div>
+        </div>
+        <div id="tq">
+            <img style="width:500px;height: 600px;" src="https://themewagon.github.io/Bootslander/assets/img/faq.jpg" alt="">
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <!-- <div class="content">
+        <h1>Welcome to Our Gym</h1>
+        <p>Get fit with us!</p>
+    </div> -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" class="social-icon">Facebook</a></li>
+                    <li><a href="#" class="social-icon">Instagram</a></li>
+                    <li><a href="#" class="social-icon">Twitter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Gym Street, Fitness City</p>
+                <p>Email: info@gym.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gym Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     
     
     
