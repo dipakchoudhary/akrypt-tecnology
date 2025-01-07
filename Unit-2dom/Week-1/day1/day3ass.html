@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #man{
+            width: 400px;
+            height: 300px;
+            border: solid black;
+            display: flex;
+        }
+        .image{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="man">
+
+    </div>
+</body>
+<script>
+
+let employees= [
+    { name: "Alice", role: "Developer", salary: 50000 },
+    { name: "Bob", role: "Designer", salary: 45000 },
+    { name: "Charlie", role: "Manager", salary: 60000 }
+]
+employees.forEach((e)=>{
+    let man=document.getElementById("man")
+    let div1=document.createElement("div")
+    div1.style.border="solid red"
+    man.append(div1)
+    let image=document.createElement("img")
+     image.className="image"
+     image.setAttribute("src","https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D")
+
+
+    let h4=document.createElement("h4")
+    let h1=document.createElement("h1")
+    let p=document.createElement("p")
+    h1.innerText="name:-alice"
+    h4.innerText=`role:- ${e.role}`;
+    p.innerText=`salary:-${e.salary}`;
+    div1.append(image,h1,h4,p)
+    
+})
+
+ 
+
+
+</script>
+</html>

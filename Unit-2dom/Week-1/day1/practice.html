@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #man{
+            width: 300px;
+            height: 50px;
+            /* border: solid red; */
+            text-align: center;
+            margin-left: 300px;
+            background-color: black;
+            color: white;
+            font-size: 40px;
+
+        }
+        #klk{
+            width: 900px;
+            height: 500px;
+            border: solid;
+            text-align: center;
+            background-color: brown;
+
+        }
+        #po{
+           text-align: center;
+           border-radius: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="klk">
+    <h1> THE MINI CALCULATER</h1>
+    <div id="man"></div>
+    <br>
+    <input  style="width: 250px;height: 50px;font-size: 15px;" type="number" name="" id="ak"placeholder="the first number">
+    <input style="width: 250px;height: 50px;font-size: 15px;" type="number" name="" id="did"placeholder="the second number">
+    <br>
+    <br>
+    <div id="po">
+    <button style="width: 100px;height: 50px;" onclick="as()">add</button>
+    <button style="width: 100px;height: 50px;" onclick="qw()">sub</button>
+    <button style="width: 100px;height: 50px;"onclick="yr()">multi </button>
+    <button style="width: 100px;height: 50px;"onclick="ui()">devide</button>
+</div>
+</div>
+    <!-- <button onclick="pro">pro</button>
+    <button onclick="multi">multi</button>
+    <button onclick="devi">devide</button> -->
+</body>
+<script>
+    // let man=document.getElementById("man")
+    let id=document.getElementById("ak")
+    let di=document.getElementById("did")
+  function as(){
+    let sum=Number(ak.value)+Number(did.value)
+    man.innerText=`${sum}`
+  }
+  function qw(){
+    let pro=Number(ak.value)-Number(did.value)
+    man.innerText=`${pro}`
+  }
+  function yr(){
+    let multi=Number(ak.value)*Number(did.value)
+    man.innerText=`${multi}`
+  }
+  function ui(){
+    let devid=Number(ak.value)/Number(did.value)
+    man.innerText=`${devid}`
+  }
+
+
+    
+    
+    
+
+
+
+        
+</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child {
+        width: 200px;
+        height: 200px;
+        color: aqua;
+      }
+      .heading {
+        color: red;
+      }
+      .image {
+        width: 200px;
+        
+      }
+    </style>
+</head>
+<body>
+    
+    <form action="" id="form">
+
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <input type="email" id="email" placeholder="Enter Your Email">
+      
+        <select  id="course">
+            <option value="">Select Course</option>
+            <option value="fswd">FSWD</option>
+            <option value="fd">FD</option>
+            <option value="bd">BD</option>
+        </select>
+       <input type="submit" id="submit">
+
+    </form>
+<hr>
+<div id="cont" style="display: flex; border: 2px solid red"> </div>
+
+
+
+</body>
+<script>
+ let form=document.getElementById("form")
+ let cont = document.getElementById("cont");
+ let arr=[]
+ console.log(cont.innerHTML)
+form.addEventListener("submit",function(e){
+e.preventDefault();
+
+cont.innerHTML=null;
+
+let obj={
+    name:form.name.value,
+    email:form.email.value,
+
+    course:form.course.value
+}
+    console.log(obj)
+
+    arr.push(obj)
+    console.log(arr)
+    
+
+
+   arr.forEach((ele, i) => {
+      let div = document.createElement("div");
+      div.style.border = "2px solid green";
+      div.className = "child";
+      cont.append(div);
+
+
+      let image=document.createElement("img");
+      image.className="image"
+    //   image.src="https://akrypttechnologies.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FApp.91ee80a0.jpg&w=3840&q=75"
+      image.setAttribute("src","https://akrypttechnologies.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FApp.91ee80a0.jpg&w=3840&q=75")
+
+      let heading = document.createElement("h1");
+      heading.className = "heading";
+      heading.innerText =` Name: ${ele.name}`;
+      let heading2 = document.createElement("h4");
+      heading2.innerText =` Email: ${ele.email}`;
+      let p = document.createElement("p");
+      p.innerText =` Course: ${ele.course}`;
+
+      div.append( image,heading, heading2, p);
+    });
+ 
+})
+
+
+ 
+</script>
+</html>

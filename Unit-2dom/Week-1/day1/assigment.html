@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border: solid black;
+            width: 50px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; width: 50; height: 60">akrypt tech.</h1>
+    <div id="main"></div>
+    <input type="number"  id="add" placeholder="input1">
+    <input type="number"  id="subtract" placeholder="input2">
+    <br>
+    <br>
+    <button id="dee">add</button>
+    <button id="mult">multiply</button>
+    <button id="subtra">subtract</button>
+    <button id="divid">divid</button>
+</body>
+<script>
+    let add=document.getElementById("add")
+    let subtract=document.getElementById("subtract")
+
+    dee.addEventListener("click",print)
+    function print (){
+      let sum=Number(add.value)+Number(subtract.value)
+        main.innerText=`${sum }`
+    }
+
+    mult.addEventListener("click",name)
+    function name (){
+      let sum=Number(add.value)*Number(subtract.value)
+        main.innerText=`${sum }`
+    }
+    subtra.addEventListener("click",ss)
+    function ss (){
+      let sum=Number(add.value)-Number(subtract.value)
+        main.innerText=`${sum }`
+    }
+    divid.addEventListener("click",gg)
+    function gg (){
+      let sum=Number(add.value)/Number(subtract.value)
+        main.innerText=`${sum }`
+    }
+</script>
+</html>
+
+

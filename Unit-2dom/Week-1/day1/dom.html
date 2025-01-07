@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            color: red;
+        }
+        #ns{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <h1 id="ns">may name is deepak</h1> 
+   <button id="btn">click me</button>
+</body>
+<script>
+    let had=document.getElementById("ns")
+    let button=document.getElementById("btn")
+   
+    button.addEventListener("click",print)
+    function print(){
+        had.innerText="may name is tejas"
+       
+    }
+
+</script>
+
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>akrypt tech.</h1>
+    <div style="border: solid black; width: 500px;height: 200px;" id="result">result</div>
+    <input type="number"  id="input1" placeholder="input1 ">
+    <input type="number"  id="input2" placeholder="input2 ">
+
+   <!-- <select name="" id="select" placeholder="">
+    <option value="">select</option>
+    <option value="male">male</option>
+    <option value="female">famele</option> -->
+   <!-- </select> -->
+    
+   
+   <br>
+   <button id="btn" >submit</button>
+
+</body>
+<script>
+//     let result=document.getElementById("result")
+//     let name=document.getElementById("name")
+//     let select=document.getElementById("select")
+//   let btn=document.getElementById("btn")
+//    btn.addEventListener("click",print)
+//    function print(){
+//     result.innerText=`select name is ${name.value} and gender is ${select.value}`
+//     // console.log(name.value)
+//     // console.log(select.value)
+//     alert("the change your name") 
+
+//    }
+
+let input1=document.getElementById("input1")
+let input2=document.getElementById("input2")
+btn.addEventListener("click", print)
+
+function print(){
+    let sum=Number(input1.value)*Number(input2.value)
+    // result.innerText=`result is:-${sum}`
+    if(sum==0){
+        alert("enter a number")
+    }else{
+         result.innerText=`result is:-${sum}`
+    }
+    
+}
+
+
+
+
+
+</script>
+</html>
+
+ -->

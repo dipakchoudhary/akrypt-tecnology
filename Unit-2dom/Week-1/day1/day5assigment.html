@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2014/12/10/05/50/english-bulldog-562723_960_720.jpg"/>
+    <button onclick="increment()">Like</button>
+    <button onclick="decriment()">Dislike</button>
+    <h1 id="like">0</h1>
+    <h2 id="dislike">0</h2>
+
+</body>
+<script>
+    let like=document.getElementById("like");
+    let count1=localStorage.getItem("fgh");
+    let count=0;
+    let count2=0;
+    if(coun1===null){
+        count1=0
+    }else {
+        like.innerHTML=count1
+
+    }
+    
+    
+    function increment(){
+        console.log(count1)
+        count1++;
+        localStorage.setItem("fgh",count1)
+        like.innerHTML=count1
+
+    }
+
+</script>
+</html>

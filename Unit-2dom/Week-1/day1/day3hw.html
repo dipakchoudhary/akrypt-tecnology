@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #man{
+            width: 400px;
+            height: 300px;
+            /* border: solid black; */
+            display: flex;
+        }
+        .image{
+            width: 200px;
+        }
+        .img1{
+            width: 100px;
+          
+        }
+        .div{
+            border: solid black;
+            gap: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="man">
+       
+
+    </div>
+</body>
+<script>
+
+let employees= [
+  {
+    item: "PS4 Pro",
+    original: 399.99,
+     discount: 10,
+
+    stock: 3,
+    total: 1199.97,
+image:"https://akrypttechnologies.com/_next/static/media/Akrypt%20Technologies%20Logo%20Full%20Transparent%20White.fb8c32d4.svg",
+  },
+  {
+    discount: 10,
+    item: "Xbox One X",
+    original: 499.99,
+    stock: 1,
+    total: 449.991,
+image:"https://akrypttechnologies.com/_next/static/media/Akrypt%20Technologies%20Logo%20Full%20Transparent%20White.fb8c32d4.svg",
+
+  },
+  {
+    item: "Nintendo Switch",
+    original: 299.99,
+    stock: 4,
+image:"https://akrypttechnologies.com/_next/static/media/Akrypt%20Technologies%20Logo%20Full%20Transparent%20White.fb8c32d4.svg",
+
+    total: 1199.96
+  },
+  {
+ discount: 10,
+
+    item: "PS2 Console",
+    original: 299.99,
+    stock: 1,
+image:"https://akrypttechnologies.com/_next/static/media/Akrypt%20Technologies%20Logo%20Full%20Transparent%20White.fb8c32d4.svg",
+
+    total: 59.99799999999999
+  },
+  {
+  discount: 10,
+    item: "Nintendo 64",
+    original: 199.99,
+    stock: 2,
+image:"https://akrypttechnologies.com/_next/static/media/Akrypt%20Technologies%20Logo%20Full%20Transparent%20White.fb8c32d4.svg",
+
+    total: 139.993
+  }
+
+]
+  employees.forEach((e)=>{
+    // let men=document.getElementById("men")
+   
+    let main=document.getElementById("man")
+    let div=document.createElement("div")
+let img=document.createElement("img")
+let h2=document.createElement("h2")
+let p=document.createElement("p")
+ let p1=document.createElement("p")
+p.innerText=`origenal:-${e.original}`
+  h2.innerText=`item:${e.item}`
+  p1.innerText=`dscount:${e.discount}`
+  div.className="div"
+  div.append(h2,p,p1)
+   main.append(div)
+   
+  })
+
+
+
+
+</script>
+</html>
+
+

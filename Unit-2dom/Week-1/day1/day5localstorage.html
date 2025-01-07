@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the game</h1>
+    <h2 id="heding">0</h2>
+    <button onclick="increment()">click</button>
+</body>
+<script>
+    let heding=document.getElementById("heding");
+    let count=localStorage.getItem("counter");
+    if(count===null){
+        count=0
+    }else{
+        heding.innerHTML=count
+
+    }
+    function increment(){
+        console.log(count)
+        count++;
+        localStorage.setItem("counter",count)
+        heding.innerHTML=count
+    }
+
+</script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Akrypt Employee Records</title>
+  </head>
+  <style>
+    div{
+        border:solid black;
+        text-align: center;
+        background-color: chocolate;
+        /* display: flex; */
+       
+        
+    }
+    .cont{
+        border: solid black;
+        display: flex;
+    }
+  </style>
+  <body>
+    <!-- Use this form for taking the inputs  -->
+
+
+    <div id="cont">
+
+    </div>
+    <form id="form">
+      <input placeholder="Name" type="text" id="name" />
+      <input placeholder="Employee ID" type="text" id="employee_id" />
+      <select id="department">
+        <option value="">Select Department</option>
+        <option value="HR">HR</option>
+        <option value="Finance">Finance</option>
+        <option value="Engineering">Engineering</option>
+      </select>
+      <input placeholder="Experience" type="number" id="experience" />
+      <input placeholder="Email" type="email" id="email" />
+      <input placeholder="Mobile No." type="number" id="mobile" />
+      <input type="submit" value="Submit" />
+    </form>
+
+
+    <!-- Use this select tag for filtering  -->
+    <select id="filter">
+      <option value="dep">Select Department</option>
+      <option value="HR">HR</option>
+      <option value="Finance">Finance</option>
+      <option value="Engineering">Engineering</option>
+    </select>
+  <div id="cardcontainer"></div>
+    <script>
+      let form=document.getElementById("form")
+      let cardcontainer=document.getElementById("cardcontainer")
+      let arr=[]
+      console.log(cardcontainer.innerHTML)
+      form.addEventListener("submit",function(e){
+     e.preventDefault();
+     cardcontainer.innerHTML=null;
+
+
+     let obj={
+        name:form.name.value,
+        employee_id:form.employee_id.value,
+        department:form.department.value,
+        experience:form.experience.value,
+        email:form.email.value,
+        mobile:form.mobile.value
+
+    
+
+
+
+
+    
+     }
+     console.log(obj)
+     arr.push(obj)
+     console.log(arr)
+
+
+     arr.forEach((ele, i)=>{
+        let div=document.createElement("div")
+        cont.append(div);
+        let p=document.createElement("p")
+        p.innerText=`name:-${ele.name}`;
+        let h1=document.createElement("h1")
+        h1.innerText=` employee_id:-${ele. employee_id}`;
+        let h2=document.createElement("h2")
+        h2.innerText=`experience:-${ele.experience}`;
+        let h3=document.createElement("h3")
+        h3.innerText=`email:-${ele.email}`;
+        let h4=document.createElement("h4")
+        h4.innerText=`mobile:-${ele.mobile}`;
+
+        let h5=document.createElement("h5")
+        h5.innerText=`department:-${ele.department}`;
+
+
+        div.append(p,h1,h2,h3,h4,h5);
+
+        cont.append(div);
+
+
+
+
+
+
+     })
+
+     
+
+
+      })
+
+      
+
+    </script>
+</html>

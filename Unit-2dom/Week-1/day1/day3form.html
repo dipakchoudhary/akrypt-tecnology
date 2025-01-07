@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+      <form action="" id="form">
+        <input type="text" name="" id="man" placeholder="enter your name">
+    <input type="email" name="" id="email" placeholder="enter your email">
+    <input type="number" name="" id="number" placeholder="enter your number">
+  
+    <select name="" id="cours">
+        <option value="fd">fd</option>
+        <option value="df">df</option>
+        <option value="sd">sd</option>
+
+    </select>
+    <input type="submit" id="submit">
+</form>
+
+<div id="abc"></div>
+
+</body>
+<script>
+   
+   
+    let submit=document.getElementById("form")
+    let cont=document.getElementById("abc")
+   
+    let arr=[]
+    submit.addEventListener("submit",function(e){
+        e.preventDefault();
+        
+        console.log(name.value)
+        
+        let obj={
+     name:form.man.value,
+     email:form.email.value,
+     number:form.number.value,
+     cours:form.cours.value
+    }
+        arr.push(obj)
+        console.log(arr)
+
+
+    })
+    
+    
+
+
+    
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+</head>
+<body>
+
+    <button onclick="deepak()">Store name to LS</button>
+    <h1 id="nameDisplay"></h1>
+
+    
+    <button onclick="tejas()">Get name from LS</button>
+    <h2 id="fg"></h2>
+
+    <!-- Part-3: Store Mobile Num to LS -->
+    <button  onclick="jk()">Store Mobile Num to LS</button>
+    <h1 id="mobileDisplay"></h1>
+
+    <!-- Part-4: Get Mobile Number from LS -->
+    <button onclick="mob()">Get Mobile Number from LS</button>
+    <h1 id="kl"></h1>
+
+    <!-- Part-5: Store Hobbies to LS -->
+    <button onclick="io()">Store Hobbies to LS</button>
+
+    <!-- Part-6: Get Hobbies from LS -->
+    <button onclick="getHobbiesBtn()">Get Hobbies from LS</button>
+    <h1 id="showHobbies"></h1>
+
+    <!-- Part-7: Store Students Data to LS -->
+    <button onclick="storeStudentsBtn()">Store Students Data to LS</button>
+
+    <!-- Part-8: Get Students Data from LS -->
+    <button onclick="getStudentsBtn()">Get Students Data from LS</button>
+    <h1 id="showStudents"></h1>
+
+    <script>
+        
+        let nameDisplay=document.getElementById("nameDisplay")
+        let arr=JSON.parse(localStorage.getItem("nameDisplay"));
+        let name=JSON.parse(localStorage.getItem("fg"))
+        let kl=document.getElementById("kl")
+        let showHobbies=document.getElementById("showHobbies")
+        let showStudents=document.getElementById("showStudents")
+       
+       
+ 
+        function deepak(){
+            alert("store name is ls")
+          
+        }
+        let fg=document.getElementById("fg")
+        function tejas(){
+           
+            fg.innerText=`${"deepak"}`
+            localStorage.setItem("man",JSON.stringify(fg))
+        }
+        function jk(){
+            alert("store mobaile number ls")
+        }
+
+        function mob(){
+            kl.innerText=`${333333222}`
+            localStorage.setItem("man",JSON.stringify(mob))
+            
+        }
+        function io(){
+            alert("store hobbies to ls")
+        
+        }
+        function getHobbiesBtn(){
+            showHobbies.innerText=`${"may hobbi name athelatics games"}`
+            localStorage.setItem("man",JSON.stringify( getHobbiesBtn))
+
+        }
+        function storeStudentsBtn(){
+            alert("store student data to ls")
+    
+
+
+        }function getStudentsBtn(){
+
+           showStudents.innerText=`${"the student data complete"}`
+           localStorage.setItem("man",JSON.stringify(getStudentsBtn ))
+           
+
+            
+        }
+    </script>
+
+</body>
+</html>

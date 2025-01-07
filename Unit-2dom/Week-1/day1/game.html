@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Masai Games</title>
+  </head>
+  <body>
+    <div id="min">min</div>
+    <div id="max">max</div>
+    <div id="score">
+    </div>
+    <div id="keypad">
+      <button>0</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+    </div>
+    <button id="enter">ENTER</button>
+  </body>
+  <script>
+
+    let score=document.getElementById("score")
+    let buttons=document.querySelectorAll("#keypad button")
+
+    buttons.forEach((e,i)=>{
+        console.log(e)
+        e.addEventListener("click",function(){
+            score.innerText+=e.innerText
+        })
+    })
+
+
+  </script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1{
+            background-color: red;
+        }
+        .btn{
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="heding">day 2</h1>
+    <button id="submit">sumbmit</button>
+    <br>
+   <div class="keypad">
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+    <button class="btn">0</button></div>
+</body>
+<script>
+    let hading=document.getElementById("heding")
+    let submit=document.getElementById("submit")
+    console.log(submit)
+    submit.addEventListener("click",function(){
+        console.log(heding.innerText)
+    })
+    // let button=document.getElementsByClassName("btn")
+    // console.log(button)
+    // // for(let i=0;i<button.length;i++){
+    //     button[i].addEventListener("click",function(event){
+    //         console.log(event.target.innerText);
+            
+    //     })
+    // }
+
+    
+    let button=document.querySelectorAll(".keypad .btn")
+    console.log(button)
+    button.forEach(function(e,i){
+        e.addEventListener("click",function(){
+            console.log(e.innerText,"gg")
+        })
+    })
+</script>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">may name is deepak</h1>
+    <button id="btn">click </button>
+</body>
+<script>
+    let name=document.getElementById("name")
+    let name2=document.getElementById("btn")
+    name2.addEventListener("click",function(){
+        name.style.color="red"
+        name.style.backgroundColor="yellow"
+        name2.style.backgroundColor="red"
+    })
+    
+</script>
+</html>
